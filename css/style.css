@@ -416,10 +416,14 @@ li{
 
 /* topscroll  */
 #topscroll{
-	width: 40px;
-	height: 40px;
-	background: var(--color2);
 	position: fixed;
 	top: 90%;
 	right: 30px;
+}
+#topscroll a{
+	color: var(--color4);
+	font-size: 3rem;
+}
+#topscroll a:hover{
+	color: var(--color2);
 }
