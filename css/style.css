@@ -70,6 +70,8 @@ li{
 .color6{color: var(--color6);}
 .color7{color: var(--color7);}
 
+.zindex-1{z-index: 1;}
+.zindex-2{z-index: 2;}
 /*  mainheader  */
 #mainheader{
 	background: url('../img/banner-2.jpg');
@@ -120,63 +122,7 @@ li{
 }
 #showcase h1 span{color: #f99523;}
 
-/* domino  */
 
-.domino {
-    width: 220px;
-    margin: auto auto auto 200px;
-    float: left;
-    border: 16px solid #222;
-    border-radius: 2%;
-    background: #fff;
-    }
-    .top-half { 
-        border-bottom: 9px solid #222;
-    }
-    .bottom-half { 
-        border-top: 9px solid #222;
-    }
-    .dot-container {
-        width: 100%;
-        height: 200px;    }
-    .dot {
-        position: relative;
-        width: 50px;
-        height: 50px;
-        background-color: black;
-        border-radius: 50%;
-        transition-property: top, left, bottom;
-		transition-duration: 0.2s;
-
-    }
-    
-    .domino .bottom-half .dot-container .dot:nth-child(1){
-        top: 10px;
-        left: 130px;
-        
-    }
-    .domino .bottom-half .dot-container .dot:nth-child(2) {
-        left: 70px;
-        top: 20px;
-    }
-    .domino .bottom-half .dot-container .dot:last-child {
-        left: 10px;
-        bottom: -40px;
-    }
-    
-    
-    .domino .top-half .dot-container .dot {
-    	float: left;
-        margin: 8px 22px;
-        
-    }
-
-/* end domino */
-/* efectos del domino */
-
-
-
-/* end efectos del domino */
 #showcase img{
 	float: left;
 	margin-left: 50px;
@@ -185,7 +131,6 @@ li{
 /* about  */
 #about{
 	padding: 80px 0;
-	border-radius: 50px 0 0 0;
 }
 
 #about article{
@@ -193,7 +138,7 @@ li{
 	float: left;
 }
 #about .cualidad-container{
-	border-right: 10px solid #112b50;
+	border-left: 10px solid #112b50;
 }
 
 #about .cualidad-box{
@@ -252,7 +197,6 @@ li{
 	position: relative;
 	padding: 60px 0;
 	text-transform: uppercase;
-	
 }
 
 
@@ -374,7 +318,7 @@ li{
 .rm-invest-box{
 	border: 1px solid var(--color1);
 	margin: 5px;
-	width: 25%;
+	
 	border-radius:  10px;
 	padding: 50px 20px;
 	color: white;
@@ -419,21 +363,28 @@ li{
 }
 .members-box .mbox{
 	width: 30%;
+	height: 450px;
 	float: left;
 	padding: 20px 10px;
 	margin: 10px 10px;
-	background: linear-gradient(to bottom, var(--color1), var(--color2));
-	border-radius: 10px;
+	/*background: linear-gradient(to bottom, var(--color1), var(--color2));
+	*/border-radius: 10px;
+	transition-property: box-shadow, background;
+	transition-duration: 0.3s;
+}
+
+.members-box .mbox:hover{
+	box-shadow: 5px 0px 10px grey;
+	background: linear-gradient(to right, var(--color4), var(--color6));
 }
 
 .mbox img{
 	width: 100%;
-	border-radius: 40%;
 }
 
 .mbox p{
 	text-align: center;
-	color: white;
+	color: var(--color1);
 }
 
 .mbox p span{
@@ -462,3 +413,13 @@ li{
 }
 
 #mainfooter a:hover{color: var(--color4);}
+
+/* topscroll  */
+#topscroll{
+	width: 40px;
+	height: 40px;
+	background: var(--color2);
+	position: fixed;
+	top: 90%;
+	right: 30px;
+}

@@ -1,0 +1,53 @@
+
+/*html{background: red;}
+/* header */
+
+.domino{position: fixed;
+top: -999px;}
+
+#mainheader{
+	height: 500px;
+}
+
+#showcase img{
+	position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*navbar */
+#navbar .menu{
+	float: none;
+}
+
+#navbar .menu li{
+	float: left;
+	display: block;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+/* about */
+#about article{
+	width: 100%;
+	float: none;
+}
+
+#about .cualidad-container{
+	border-left: 0px solid #112b50;
+}
+
+/*team*/
+.members-box .mbox{
+	height: 350px;
+	width: 40%;
+	margin: 0px 10px;
+
+}
+.members-box{
+	margin: auto;
+}
+
+/* domino sm  */
+.domino.sm{visibility: hidden;}

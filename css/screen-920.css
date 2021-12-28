@@ -1,0 +1,33 @@
+
+/*html{background: red;}
+
+/* header */
+.domino{
+	margin: auto auto auto 90px;
+}
+/* tokenomic */
+
+
+#tokenomic .grafico{
+	left: 0%;
+	position: initial;
+}
+#tokenomic .labels-box{
+	position: initial;
+	top: 150px;
+}
+#tokenomic .labels-box .label{
+	float: left;
+	display: inline-block;
+	width: 50%;
+}
+
+/* roadmap investment  */
+#roadmap-investment .invest-boxes{
+	flex-wrap: wrap;
+}
+/* team  */
+
+.members-box .mbox{
+	height: 350px;
+}

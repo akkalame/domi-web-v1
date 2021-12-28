@@ -1,0 +1,261 @@
+/* domino  */
+
+.domino {
+    width: 220px;
+    margin: auto auto auto 200px;
+    float: left;
+    border: 16px solid #222;
+    border-radius: 2%;
+    background: #fff;
+    }
+    .top-half { 
+        border-bottom: 9px solid #222;
+    }
+    .bottom-half { 
+        border-top: 9px solid #222;
+    }
+    .dot-container {
+        width: 100%;
+        height: 200px;    }
+    .dot {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        transition-property: top, left, bottom,margin;
+		transition-duration: 0.2s;
+
+    }
+    
+    .domino .bottom-half .dot-container .dot:nth-child(1){
+        top: 10px;
+        left: 130px;
+        
+    }
+    .domino .bottom-half .dot-container .dot:nth-child(2) {
+        left: 70px;
+        top: 20px;
+    }
+    .domino .bottom-half .dot-container .dot:last-child {
+        left: 10px;
+        bottom: -40px;
+    }
+    
+    
+    .domino .top-half .dot-container .dot {
+    	float: left;
+        margin: 8px 22px;
+        
+    }
+
+/*domino small*/
+.domino.sm {
+    width: 120px;
+    border: 8px solid #222;
+}
+    .domino.sm .top-half { 
+        border-bottom: 6px solid #222;
+    }
+    .domino.sm .bottom-half { 
+        border-top: 6px solid #222;
+    }
+    .domino.sm .dot-container {
+        width: 100%;
+        height: 100px;    }
+    .domino.sm .dot {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .domino.sm .top-half .dot-container .dot {
+    	float: none;
+        margin: 0px 0px;
+        
+    }
+    /*one*/
+    .domino.sm .dot-container.one .dot:nth-child(1) {
+        left: 40px;
+        top: 38px;
+    }
+    .domino.sm .dot-container.one .dot:nth-child(2),
+    .domino.sm .dot-container.one .dot:nth-child(3),
+    .domino.sm .dot-container.one .dot:nth-child(4),
+    .domino.sm .dot-container.one .dot:nth-child(5),
+    .domino.sm .dot-container.one .dot:nth-child(6){
+        visibility: hidden;
+    }
+
+    /* two */
+    .domino.sm .dot-container.two .dot:nth-child(1) {
+        left: 70px;
+        top: 10px;
+    }
+    .domino.sm .dot-container.two .dot:nth-child(2){
+        left: 10px;
+        top: 40px;
+    }
+
+    .domino.sm .dot-container.two .dot:nth-child(3),
+    .domino.sm .dot-container.two .dot:nth-child(4),
+    .domino.sm .dot-container.two .dot:nth-child(5),
+    .domino.sm .dot-container.two .dot:nth-child(6){
+        visibility: hidden;
+    }
+
+    /* three */
+    .domino.sm .dot-container.three .dot:nth-child(1) {
+        left: 70px;
+        top: 10px;
+    }
+    .domino.sm .dot-container.three .dot:nth-child(2){
+        left: 40px;
+        top: 13px;
+    }
+    .domino.sm .dot-container.three .dot:nth-child(3){
+        left: 10px;
+        top: 15px;
+    }
+
+    .domino.sm .dot-container.three .dot:nth-child(4),
+    .domino.sm .dot-container.three .dot:nth-child(5),
+    .domino.sm .dot-container.three .dot:nth-child(6){
+        visibility: hidden;
+    }
+
+    /* four */
+    .domino.sm .dot-container.four .dot:nth-child(1) {
+        left: 10px;
+        top: 10px;
+    }
+    .domino.sm .dot-container.four .dot:nth-child(2){
+        left: 70px;
+        top: -15px;
+    }
+    .domino.sm .dot-container.four .dot:nth-child(3){
+        left: 10px;
+        top: 15px;
+    }
+
+    .domino.sm .dot-container.four .dot:nth-child(4){
+        left: 70px;
+        top: -10px;
+    }
+
+    .domino.sm .dot-container.four .dot:nth-child(5),
+    .domino.sm .dot-container.four .dot:nth-child(6){
+        visibility: hidden;
+    }
+
+    /* five */
+    .domino.sm .dot-container.five .dot:nth-child(1) {
+        left: 10px;
+        top: 10px;
+    }
+    .domino.sm .dot-container.five .dot:nth-child(2){
+        left: 70px;
+        top: -15px;
+    }
+    .domino.sm .dot-container.five .dot:nth-child(3){
+        left: 10px;
+        top: 15px;
+    }
+
+    .domino.sm .dot-container.five .dot:nth-child(4){
+        left: 70px;
+        top: -10px;
+    }
+
+    .domino.sm .dot-container.five .dot:nth-child(5){
+        left: 40px;
+        top: -63px;
+    }
+
+    .domino.sm .dot-container.five .dot:nth-child(6){
+        visibility: hidden;
+    }
+
+    /* six */
+    .domino.sm .dot-container.six .dot:nth-child(1) {
+        left: 10px;
+        top: 10px;
+    }
+    .domino.sm .dot-container.six .dot:nth-child(2){
+        left: 70px;
+        top: -15px;
+    }
+    .domino.sm .dot-container.six .dot:nth-child(3){
+        left: 10px;
+        top: -10px;
+    }
+
+    .domino.sm .dot-container.six .dot:nth-child(4){
+        left: 70px;
+        top: -35px;
+    }
+
+    .domino.sm .dot-container.six .dot:nth-child(5){
+        left: 10px;
+        top: -30px;
+    }
+
+    .domino.sm .dot-container.six .dot:nth-child(6){
+        left: 70px;
+        top: -55px;
+    }
+
+/*  efecto de domino oculto  */
+.domino.sm.bg-effectL{
+    position: absolute;
+    top: 30%;
+    left: -10%;
+}
+.domino.sm.bg-effectR{
+    position: absolute;
+    top: 30%;
+    right: 8%;
+}
+
+
+/* end domino */
+/* ---------efectos del domino */
+
+/* mitad arriba */
+#showcase .domino:hover .top-half .dot {
+   	float: none;
+    margin: 0px 0px;    
+    left: 70px;    
+}
+
+#showcase .domino:hover .top-half .dot:nth-child(2){
+    top: 20px;
+}
+#showcase .domino:hover .top-half .dot:nth-child(1){
+	top: 70px;
+}
+#showcase .domino:hover .top-half .dot:nth-child(3){
+    top: -30px;
+}
+#showcase .domino:hover .top-half .dot:nth-child(4){
+    top: -80px;
+}
+#showcase .domino:hover .top-half .dot:nth-child(5){
+    top: -130px;
+}
+#showcase .domino:hover .top-half .dot:nth-child(6){
+    top: -180px;
+}
+
+/* mitad abajo */
+#showcase .domino:hover .bottom-half .dot-container .dot:nth-child(1){
+    top: 70px;
+    left: 70px;
+        
+}
+#showcase .domino:hover .bottom-half .dot-container .dot:last-child {
+    left: 70px;
+    bottom: 0px;
+    top: -30px;
+}
+
+/* end efectos del domino */

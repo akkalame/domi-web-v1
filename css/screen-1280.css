@@ -1,0 +1,15 @@
+
+/* tokenomic */
+#tokenomic .container{
+	overflow: hidden !important;
+}
+
+#tokenomic .grafico{
+	left: 10%;
+}
+
+/* team  */
+
+.members-box .mbox{
+	height: 450px;
+}
