@@ -1,0 +1,144 @@
+@media (max-width: 1280px) {
+    /* tokenomic */
+  #tokenomic .container{
+    overflow: hidden !important;
+  }
+
+  #tokenomic .grafico{
+    left: 10%;
+  }
+
+  /* team  */
+
+  .members-box .mbox{
+    height: 450px;
+  }
+
+}
+
+@media (max-width: 1080px) {
+  /* mainheader */
+
+  #showcase img{
+    max-width: 400px;
+    top: 300px;
+    position: absolute;
+  }
+  /* tokenomic */
+  #tokenomic .container{
+    overflow: hidden !important;
+  }
+
+  #tokenomic .grafico{
+    left: 15%;
+  }
+
+  /* team  */
+
+  .members-box .mbox{
+    height: 380px;
+  }
+}
+
+@media (max-width:  1020px){
+  /* tokenomic */
+  #tokenomic .container{
+    overflow: hidden !important;
+  }
+
+  #tokenomic .grafico{
+    left: 23%;
+  }
+
+  /* team  */
+
+  .members-box .mbox{
+    height: 380px;
+  }
+}
+
+@media (max-width:  920px){
+    /* header */
+  .domino{
+    margin: auto auto auto 90px;
+  }
+  /* tokenomic */
+
+
+  #tokenomic .grafico{
+    left: 0%;
+    position: initial;
+  }
+  #tokenomic .labels-box{
+    position: initial;
+    top: 150px;
+  }
+  #tokenomic .labels-box .label{
+    float: left;
+    display: inline-block;
+    width: 50%;
+  }
+
+  /* roadmap investment  */
+  #roadmap-investment .invest-boxes{
+    flex-wrap: wrap;
+  }
+  /* team  */
+
+  .members-box .mbox{
+    height: 350px;
+  }
+}
+
+@media (max-width:  768px){
+  
+  .domino{position: fixed;
+  top: -999px;}
+
+  #mainheader{
+    height: 500px;
+  }
+
+  #showcase img{
+    position: absolute;
+      left: 40%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  /*navbar */
+  #navbar .menu{
+    float: none;
+  }
+
+  #navbar .menu li{
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+  }
+
+  /* about */
+  #about article{
+    width: 100%;
+    float: none;
+  }
+
+  #about .cualidad-container{
+    border-left: 0px solid #112b50;
+  }
+
+  /*team*/
+  .members-box .mbox{
+    height: 350px;
+    width: 40%;
+    margin: 0px 10px;
+
+  }
+  .members-box{
+    margin: auto;
+  }
+
+  /* domino sm  */
+  .domino.sm{visibility: hidden;}
+}
