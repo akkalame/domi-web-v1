@@ -74,21 +74,16 @@ li{
 .zindex-2{z-index: 2;}
 /*  mainheader  */
 #mainheader{
-	background: url('../img/banner-2.jpg');
+	background: url('../img/banner.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
 
+.btn-open, .btn-close{visibility: hidden;}
 /* navbar  */
 #navbar{
 	padding: 20px 0;
-}
-#navbar .logo{
-	float: left;
-	color: #f99523;
-	margin: 30px 0;
-	text-align: center;
 }
 
 #navbar .menu{
@@ -109,6 +104,7 @@ li{
 }
 
 #navbar .menu a:hover{color:#f6ce39 ;}
+
 /*  showcase  */
 #showcase{
 	padding: 40px 0;
@@ -375,11 +371,17 @@ li{
 
 .members-box .mbox:hover{
 	box-shadow: 5px 0px 10px grey;
-	background: linear-gradient(to right, var(--color4), var(--color6));
+	background: linear-gradient(225deg, var(--color2), var(--color1), var(--color6));
 }
+.members-box .mbox:hover p,.members-box .mbox:hover span
+{color: white;}
+
 
 .mbox img{
 	width: 100%;
+	height: 300px;
+	object-fit: cover;
+
 }
 
 .mbox p{

@@ -11,6 +11,24 @@ $(document).ready( function(){
       $('#topscroll').show();
     }
   };
+
+  /* abrir y cerrar menu*/
+  $('.btn-open').click(function() {
+    $('nav').removeClass('close');
+    $('nav').addClass('open');
+  });
+
+  $('.btn-close').click(function() {
+    $('nav').removeClass('open');
+    $('nav').addClass('close');
+  });
+
+  /* cerrar menu cuando pulse una opcion*/
+
+  $('.menu li').click(function() {
+    $('nav').removeClass('open');
+    $('nav').addClass('close');
+  });
 });
 
 function esVisible(elem){
