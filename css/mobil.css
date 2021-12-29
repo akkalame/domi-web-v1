@@ -58,6 +58,11 @@
   .members-box .mbox{
     height: 380px;
   }
+
+  .mbox img{
+    height: 250px;
+
+  }
 }
 
 @media (max-width:  920px){
@@ -90,6 +95,11 @@
 
   .members-box .mbox{
     height: 350px;
+  }
+
+  .mbox img{
+    height: 200px;
+
   }
 }
 
@@ -237,6 +247,7 @@
 
   .members-box .mbox img{
     max-width: 300px;
+    height: 350px;
     display: block;
     margin: auto;
   }
@@ -342,7 +353,18 @@
 
   /*team*/
   .members-box .mbox{
-    min-height: 380px;
+    min-height: 420px;
+
+  }
+  .members-box .mbox img{
+    height: 300px;
+
+  }
+}
+
+@media (max-width:  240px){
+  .members-box .mbox img{
+    height: 250px;
 
   }
 }
