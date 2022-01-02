@@ -21,12 +21,7 @@
 }
 
 @media (max-width: 1080px) {
-  /* mainheader */
 
-  #showcase img{
-    top: 300px;
-    position: absolute;
-  }
   /* tokenomic */
   #tokenomic .container{
     overflow: hidden !important;
@@ -42,6 +37,14 @@
     height: 380px;
   }
 }
+
+@media (max-width:  1050px){
+  .domino-container .domino:nth-child(2),
+  .domino-container .domino:nth-child(3){
+    top: 56px;
+  }
+}
+
 
 @media (max-width:  1020px){
   /* tokenomic */
@@ -66,7 +69,12 @@
 }
 
 @media (max-width:  920px){
-    /* header */
+  
+  #showcase img{
+    max-width: 350px;
+   
+  }
+ /* header */
   .domino{
     margin: auto auto auto 90px;
   }
@@ -109,21 +117,84 @@
     padding: 0 10px;
   }
 
-  .domino{position: fixed;
-  top: -999px;}
 
+ /*nav bar*/
+ #navbar{
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(225deg, var(--color2), var(--color1), var(--color6));
+  height: 100%;
+  z-index: 2;
+  transition: all .5s ease;
+ }
+
+ .open{
+  visibility: visible;
+  opacity: 1;
+ }
+
+ .close{
+  visibility: hidden;
+  opacity: 0;
+ }
+ 
+ #navbar .container{
+  position: relative;
+  top: 30%;
+ }
+ #navbar .menu li, #navbar .menu{
+    float: none !important;
+  }
+
+  .menu li a{
+    transition: all .5s ease;
+  }
+
+  .btn-close, .btn-open{visibility: visible;}
+  .btn-close{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+ }
+ .btn-close:hover{
+    color: var(--color3);
+ }
+
+ .domino{
+  display: none;
+ }
+
+
+/*mainheader*/
   #mainheader{
     height: 500px;
   }
 
-  #showcase img{
-    position: absolute;
-    left: 40%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 30px;
-    max-width: 300px;
+  #title-container{
+    max-width: 360px;
   }
+
+  #showcase img{
+    float: none;
+  }
+  #title-container h1{
+    text-align: center;
+  }
+
+
+  /* header  */
+ .btn-open{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+ }
+ .btn-open:hover{
+    color: var(--color3);
+ }
 
   /*navbar */
   #navbar .menu{
@@ -253,66 +324,12 @@
   }
 
   /* domino sm  */
-  .domino.sm{visibility: hidden;}
+  #roadmap .domino.sm{visibility: hidden;}
 }
 
 @media (max-width:  420px){
  
- /* header  */
- .btn-open{
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    top: 20px;
-    left: 20px;
- }
- .btn-open:hover{
-    color: var(--color3);
- }
-
- /*nav bar*/
- #navbar{
-  position: fixed;
-  width: 100%;
-  background: linear-gradient(225deg, var(--color2), var(--color1), var(--color6));
-  height: 100%;
-  z-index: 2;
-  transition: all .5s ease;
- }
-
- .open{
-  visibility: visible;
-  opacity: 1;
- }
-
- .close{
-  visibility: hidden;
-  opacity: 0;
- }
-
- #navbar .container{
-  position: relative;
-  top: 30%;
- }
- #navbar .menu li, #navbar .menu{
-    float: none;
-  }
-
-  .menu li a{
-    transition: all .5s ease;
-  }
-
-  .btn-close, .btn-open{visibility: visible;}
-  .btn-close{
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
- }
- .btn-close:hover{
-    color: var(--color3);
- }
+ 
 
  /* about */
   #about .description, #about .cualidad-box{
@@ -327,14 +344,11 @@
 
   /* showcase */
   #showcase{
-    padding: 0 0;
-  }
-  #showcase img{
-    max-width: 200px;
+    position: absolute;
+    top: 10%;
   }
 
   #showcase h1{
-    margin-top: 80px;
     margin-bottom: 0px;
   }
 
@@ -344,11 +358,32 @@
   
 }
 
+@media (max-width:  380px){
+
+  #title-container img{
+    max-width: 300px;
+  }
+  #title-container h1{
+    font-size: 2rem;
+
+  }
+}
+
 @media (max-width:  320px){
-  #showcase img{
-    left: 30%;
-    transform: translate(-50%, -50%);
-    top: 55%;
+  
+  #mainheader{
+    max-height: 350px;
+  }
+
+  #title-container img{
+    max-width: 250px;
+  }
+  #title-container h1{
+    font-size: 1.5rem;
+  }
+
+  #showcase{
+    max-height: 300px;
   }
 
   /*team*/
@@ -363,6 +398,13 @@
 }
 
 @media (max-width:  240px){
+ #title-container img{
+    max-width: 200px;
+  }
+  #title-container h1{
+    font-size: 1rem;
+  }
+
   .members-box .mbox img{
     height: 250px;
 
