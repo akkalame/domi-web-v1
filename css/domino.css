@@ -415,6 +415,17 @@
         top: -55px;
     }
 
+    /* HORIZONTAL SIX  */
+    .domino.sm.H .dot-container.six .dot:nth-child(3){
+        left: 40px;
+        top: -40px;
+    }
+
+    .domino.sm.H .dot-container.six .dot:nth-child(4){
+        left: 40px;
+        top: -5px;
+    }
+
 /*  efecto de domino oculto  */
 .domino.sm.bg-effectL{
     position: absolute;
