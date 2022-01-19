@@ -434,8 +434,7 @@ li{
 	margin: 10px 10px;
 	/*background: linear-gradient(to bottom, var(--color1), var(--color2));
 	*/border-radius: 10px;
-	transition-property: box-shadow, background;
-	transition-duration: 0.3s;
+	transition: box-shadow .3s linear, background .4s ease-out;
 }
 
 .members-box .mbox:hover{

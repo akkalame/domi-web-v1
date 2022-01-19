@@ -300,6 +300,10 @@
     top: 100%;
     transform: translate(-50%, 5%);
   }
+
+.roadmapBox.right .stage-way::before{
+  left: 50%;
+}
   .stage-way.no-before::before{
     width: 0px;
     height: 0px;
