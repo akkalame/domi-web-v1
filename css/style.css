@@ -410,6 +410,12 @@ li {
 }
 /* team  */
 
+#team h2 {
+    text-transform: uppercase;
+    color: var(--color1);
+    text-align: center;
+}
+/*
 #team {
     padding: 60px 0;
 }
@@ -429,8 +435,6 @@ li {
     float: left;
     padding: 20px 10px;
     margin: 10px 10px;
-    /*background: linear-gradient(to bottom, var(--color1), var(--color2));
-    */
     border-radius: 10px;
     transition: box-shadow .3s linear, background .4s ease-out;
 }
@@ -458,7 +462,8 @@ li {
 .mbox:hover p span {
     color: var(--color1);
     text-shadow: 1px 0px 5px white;
-}
+}*/
+
 /*  footer  */
 
 #mainfooter {
@@ -483,8 +488,9 @@ li {
 }
 #topscroll a {
     color: var(--color4);
+    opacity: 0.5;
     font-size: 3rem;
 }
 #topscroll a:hover {
-    color: var(--color2);
+    opacity: 1;
 }
