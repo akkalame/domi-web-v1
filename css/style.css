@@ -15,6 +15,7 @@
     --color5: #7b4c82;
     --color6: #39409b;
     --color7: rgba(213, 115, 3, 1);
+    --color8: #fefdff;
 }
 /* reset  */
 
@@ -26,7 +27,7 @@
 html, body {
     font-family: 'montserrat', sans-serif;
     scroll-behavior: smooth;
-    background: #fefdff;
+    background: var(--color8);
 }
 h1 {
     font-size: 2.5rem;
@@ -250,6 +251,110 @@ li {
 #about .description h4 {
     color: #145d88;
 }
+/*nfts*/
+
+#nfts {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, var(--color8), var(--color6), var(--color1));
+    position: relative;
+}
+#nfts h2 {
+    color: var(--color4);
+}
+/*--------------------
+Design of the sliders
+-------------------- */
+
+.slide-fichas-container {
+    margin: auto;
+    width: 600px;
+    text-align: center;
+}
+.wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.wrapper:focus {
+    outline: 0;
+}
+/*--------------------
+Design of the card
+-------------------- */
+
+.fma-card {
+    background: white;
+    width: 320px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+}
+/*Design of the img card*/
+
+.fma-card__image {
+    position: relative;
+    height: 440px;
+    margin-bottom: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+}
+.fma-card__image img {
+    height: 100%;
+    position: relative;
+    right: 55px;
+}
+/*Design of the description*/
+
+.fma-card__level {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: var(--color6);
+}
+/*---------------------------------------
+Design of the colors of the card
+-------------------------------------- */
+
+.fma-card__unit-name {
+    font-size: 26px;
+    color: var(--color1);
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.fma-card__unit-description {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.slick-prev {
+    left: 100px;
+    z-index: 999;
+}
+.slick-next {
+    right: 100px;
+    z-index: 999;
+}
+#nfts .prevSlick {
+    left: calc(50% - 210px);
+}
+#nfts .nextSlick {
+    right: calc(50% - 210px);
+}
+.slick-label {
+    color: var(--color8);
+    font-size: 2rem;
+    position: absolute;
+    top: calc(50% - 1rem);
+    z-index: 998;
+}
+.slick-label:hover {
+    color: var(--color3);
+    cursor: pointer;
+}
 /* roadmap  */
 
 #roadmap {
@@ -315,6 +420,7 @@ li {
 }
 .stage-way:hover {
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
+    cursor: default;
 }
 .stage-way::before {
     content: '';

@@ -17,7 +17,7 @@
 .slider-container .main-card {
     display: flex;
     justify-content: space-evenly;
-    width: 300%;
+    width: 200%;
     transition: 1s;
 }
 #two:checked~.main-card {
@@ -34,12 +34,20 @@
     justify-content: space-between;
 }
 .main-card .cards .card {
-    width: calc(100% / 3 - 10px);
     background: var(--color1);
     border-radius: 12px;
-    padding: 30px;
+    padding: 30px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease;
+}
+.main-card .cards.two .card {
+    width: calc(100% / 2 - 10px);
+}
+.main-card .cards.three .card {
+    width: calc(100% / 3 - 10px);
+}
+.main-card .cards.four .card {
+    width: calc(100% / 4 - 10px);
 }
 .main-card .cards .card:hover {
     transform: translateY(-15px);
@@ -54,8 +62,8 @@
     text-align: center;
 }
 .cards .card .content .img {
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     border-radius: 50%;
     padding: 3px;
     background: var(--color2);
@@ -91,13 +99,13 @@
     color: #FFF;
     border-radius: 50%;
     border: 2px solid transparent;
-    background: #FF676D;
+    background: var(--color2);
     transition: all 0.3s ease;
 }
 .media-icons a:hover {
-    color: #FF676D;
+    color: var(--color2);
     background-color: #fff;
-    border-color: #FF676D;
+    border-color: var(--color2);
 }
 .slider-container .button {
     width: 100%;

@@ -7,10 +7,39 @@ $(document).ready( function(){
   addCheckRoadmap();
 
   ocultarTopScroll();
+  sliderFichas();
 
 
   
 });
+
+function sliderFichas(){
+  var slideContainer = $('.slide-fichas-container');
+  
+  slideContainer.slick();
+  
+  $('.fma-card__image img').hide();
+  $('.slick-active').find('.fma-card img').fadeIn(200);
+  
+  // On before slide change
+  slideContainer.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $('.slick-active').find('.fma-card img').fadeOut(1000);
+  });
+  
+  // On after slide change
+  slideContainer.on('afterChange', function(event, slick, currentSlide) {
+    $('.slick-active').find('.fma-card img').fadeIn(200);
+  });
+
+  let prevbtn = $(slideContainer).find('.slick-prev');
+  let nextbtn = $(slideContainer).find('.slick-next');
+
+  prevbtn.prop('id','prevBtnFicha');
+  nextbtn.prop('id','nextBtnFicha');
+
+  prevbtn.hide();
+  nextbtn.hide();
+}
 
 function esVisible(elem){
     /* Ventana de Visualización*/
