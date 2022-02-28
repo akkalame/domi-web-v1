@@ -330,6 +330,10 @@ Design of the colors of the card
     padding: 20px;
     margin-bottom: 10px;
 }
+.fma-card__unit-description div {
+    font-size: 14px;
+    color: #353644;
+}
 .slick-prev {
     left: 100px;
     z-index: 999;

@@ -260,23 +260,15 @@
         height: 0px;
     }
     /*team*/
-    .members-box .mbox {
-        min-height: 450px;
-        width: 100%;
-        margin: 10px 10px;
-    }
-    .members-box {
-        margin: auto;
-    }
-    .members-box .mbox img {
-        max-width: 300px;
-        height: 350px;
-        display: block;
-        margin: auto;
-    }
     /* domino sm  */
     #roadmap .domino.sm {
         visibility: hidden;
+    }
+}
+@media (max-width: 640px) {
+    .cards .card .content .img {
+        height: 150px !important;
+        width: 150px !important;
     }
 }
 @media (max-width: 420px) {
@@ -301,6 +293,17 @@
     #topscroll {
         top: 82%;
     }
+    /*team*/
+    .cards .card .content .img {
+        height: 110px !important;
+        width: 110px !important;
+    }
+    .card .content .name {
+        font-size: 15px !important;
+    }
+    .card .content .job {
+        font-size: 13px !important;
+    }
 }
 @media (max-width: 380px) {
     #title-container img {
@@ -308,6 +311,11 @@
     }
     #title-container h1 {
         font-size: 2rem;
+    }
+    /*team*/
+    .cards .card .content .img {
+        height: 95px !important;
+        width: 95px !important;
     }
 }
 @media (max-width: 320px) {
@@ -324,11 +332,18 @@
         max-height: 300px;
     }
     /*team*/
-    .members-box .mbox {
-        min-height: 420px;
+    .cards .card .content .img {
+        height: 80px !important;
+        width: 80px !important;
     }
-    .members-box .mbox img {
-        height: 300px;
+    .card .content .img img {
+        border: 1px solid var(--color1) !important;
+    }
+    .card .content .name {
+        font-size: 12px !important;
+    }
+    .card .content .job {
+        font-size: 10px !important;
     }
 }
 @media (max-width: 240px) {
@@ -338,7 +353,15 @@
     #title-container h1 {
         font-size: 1rem;
     }
-    .members-box .mbox img {
-        height: 250px;
+    /*team*/
+    .cards .card .content .img {
+        height: 50px !important;
+        width: 50px !important;
+    }
+    .card .content .name {
+        font-size: 9px !important;
+    }
+    .card .content .job {
+        font-size: 7px !important;
     }
 }
