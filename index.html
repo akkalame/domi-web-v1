@@ -38,7 +38,7 @@
                     <li><a href="#nfts">NFT</a></li>
                     <li><a href="#roadmap">Roadmap</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="https://domino-nft.gitbook.io/whitepaper-domi/#" target="_blank">Whitepaper</a>
+                    <li><a href="https://domino-nft.gitbook.io/whitepaper-domi/" target="_blank">Whitepaper</a>
                     </li>
                 </ul>
             </div>
@@ -780,7 +780,7 @@
                         </br>
                     </h4>
                     <p class="description">
-                        Investors who enter this phase will be able to obtain a profit of 10% of the commissions obtained in the market and 10% obtained from the $ DOMI tokens obtained from the improvement of categories and cloning. Investors in this phase will also enjoy exclusive content of all the progress of the project, as well as being part of the test team of our demos. This investment round will be available for a limited time.
+                        Investors who enter this phase will be able to obtain a profit of 10% of the commissions obtained in the market and 10% obtained from the $ DMI tokens obtained from the improvement of categories and cloning. Investors in this phase will also enjoy exclusive content of all the progress of the project, as well as being part of the test team of our demos. This investment round will be available for a limited time.
                     </p>
                     <h6>
                         The funds obtained in this phase will be used to:
@@ -797,6 +797,9 @@
                     <div class="">
                         Development template expansion
                     </div>
+                    <input type="button" id="btn-contact-us" style="display: none;">
+                    <div class="container-btn">
+                        <a href="mailto:nft.domino@gmail.com"><label for="btn-contact-us-investor" class="btn" onclick="clickBtn(this);"><i class="fas fa-envelope"></i> Contact us </label></a></div>
                 </article>
                 <article class="rm-invest-box">
                     <h4>
@@ -950,7 +953,7 @@
                     </div>
                     
                 </div>
-                <div class="cards four">
+                <div class="cards three">
                     <div class="card">
                         <div class="content">
                             <div class="img">
@@ -986,22 +989,6 @@
                     <div class="card">
                         <div class="content">
                             <div class="img">
-                                <img alt="" src="img/tony.png">
-                                </img>
-                            </div>
-                            <div class="details">
-                                <div class="name">
-                                    Antony Arraíz
-                                </div>
-                                <div class="job">
-                                    DESIGNER
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="content">
-                            <div class="img">
                                 <img alt="" src="img/avatar-man.jpg">
                                 </img>
                             </div>
@@ -1028,9 +1015,25 @@
             </div>
         </div>
     </section>
-    <footer id="mainfooter">
-        © 2022 Domi NFT &nbsp;&nbsp;
-        <a href="https://discord.gg/x7WnkdJk" target="_blank">
+    <footer id="mainfooter" class="three">
+        <article>
+            <div id="logo-footer">
+                <img src="./img/logo-mono-light.png" alt="">
+            </div>
+            <div id="caption-footer"><span>© 2022 Domi NFT</span></div>
+        </article>
+        <article>
+            <div class="title-footer"><h4>About Domi NFT</h4></div>
+            <ul>
+                <li id="contact-us"><a href="mailto:nft.domino@gmail.com" onclick="copyToClipboard('txtMail');copied('contact-us')">Contact us</a>
+                    <p style="display:none;" id="txtMail">nft.domino@gmail.com</p>
+                    <label class="oculto">Mail copied to clipboard</label>
+                </li>
+                <li><a href="https://domino-nft.gitbook.io/whitepaper-domi/" target="_blank">Whitepaper</a></li>
+            </ul>
+        </article>
+        <article id="social-footer">
+            <a href="https://discord.gg/x7WnkdJk" target="_blank">
             <i class="fab fa-discord">
             </i>
         </a>
@@ -1050,6 +1053,7 @@
             <i class="fab fa-instagram">
             </i>
         </a>
+        </article>
     </footer>
     <div class="oculto" id="topscroll">
         <a href="#mainheader">

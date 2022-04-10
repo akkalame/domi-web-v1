@@ -10,6 +10,7 @@ $(document).ready( function(){
   sliderFichas();
 
 
+
   
 });
 
@@ -115,4 +116,41 @@ function ocultarTopScroll(){
     }
 
   });
+}
+
+function copyToClipboard(id_elemento){
+  // Crea un campo de texto "oculto"
+  let aux = document.createElement("input");
+
+  // Asigna el contenido del elemento especificado al valor del campo
+  aux.setAttribute("value", document.getElementById(id_elemento).innerHTML);
+
+  // Añade el campo a la página
+  document.body.appendChild(aux);
+
+  // Selecciona el contenido del campo
+  aux.select();
+
+  // Copia el texto seleccionado
+  document.execCommand("copy");
+
+  // Elimina el campo de la página
+  document.body.removeChild(aux);
+
+}
+
+function copied(id_elemento){
+  let e = $('#'+id_elemento+' label');
+  e.removeClass('oculto')
+  setTimeout(function(){
+    e.addClass('oculto')
+  },2500);
+
+}
+
+function clickBtn(e){
+  $(e).addClass('btn-clicked');
+  setTimeout(function(){
+    $(e).removeClass('btn-clicked')
+  },200);
 }
