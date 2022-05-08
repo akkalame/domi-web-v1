@@ -84,6 +84,7 @@
 .card .content .job {
     font-size: 18px;
     color: var(--color4);
+    text-transform: uppercase;
 }
 .card .content .media-icons {
     margin-top: 10px;

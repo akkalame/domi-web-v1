@@ -31,14 +31,25 @@
                 <i class="fas fa-times">
                 </i>
             </div>
+            
             <div class="container">
+                <ul id="menuLang">
+
+                    <button class="translate" id="es" style="display:none;"></button>
+                    <button class="translate" id="en" style="display:none;"></button>
+                    <button class="translate" id="br" style="display:none;"></button>
+                    <li id="ico-menu-lang"><i class="fas fa-globe"></i></li>
+                    <li><label for="es" class="marked langFor">ES</label></li>
+                    <li><label for="en" class="langFor">EN</label></li>
+                    <li><label for="br" class="langFor">BR</label></li>
+                </ul>
+                <div style="clear: both;"></div>
                 <ul class="menu">
-                    <li><a href="#mainheader">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#nfts">NFT</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="https://domino-nft.gitbook.io/whitepaper-domi/" target="_blank">Whitepaper</a>
+                    <li><a href="#mainheader" class="lang" key="menu1">Inicio</a></li>
+                    <li><a href="#about" class="lang" key="menu2">Nosotros</a></li>
+                    <li><a href="#roadmap" class="lang" key="menu3">Mapa de ruta</a></li>
+                    <li id="menu_torneo"><a class="disabled lang" key="menu4">Torneos</a></li>
+                    <li><a href="https://dominft.gitbook.io/whitepaper-domi-nft-v2/" target="_blank" class="lang" key="menu5">Whitepaper</a>
                     </li>
                 </ul>
             </div>
@@ -170,18 +181,18 @@
     <section id="about">
         <div class="container">
             <article class="description">
-                <h2>
-                    What is
-                    <span>
-                        domi
+                <h2 class="lang" key="description1">
+                    ¿Que es
+                    <span class="lang" key="description2">
+                        Domi
                     </span>
                     ?
                 </h2>
-                <h4>
-                    A nft version of the traditional game
+                <h4 class="lang" key="description3">
+                    Una version mejorada del juego tradicional
                 </h4>
-                <p>
-                    Domi is the traditional domino game where the 2v2 game mode is won by adding the points obtained in each round until reaching 100 points, throughout the game each player places a domino piece on the table in an organized way, and the first player to run out of pieces gives victory to his team. We do not intend or want to change the way the traditional domino is played, our vision is to implement it in this new era of nft games so that by playing this entertaining game you can earn income.
+                <p class="lang" key="description4">
+                    Domi es el juego de dominó tradicional -con los diferentes modos de juego de diferentes países- donde el mundo de los NFTs se combina para destacar una nueva narrativa que expande este maravilloso juego, otorgándole un valor más alto por el sistema de propiedad de sus activos blockchain.
                 </p>
             </article>
             <article class="cualidad-container">
@@ -189,8 +200,8 @@
                     <h1>
                         <i class="fas fa-couch">
                         </i>
-                        <h4>
-                            Comfort
+                        <h4 class="lang" key="description5">
+                            Confort
                         </h4>
                     </h1>
                 </div>
@@ -198,8 +209,8 @@
                     <h1>
                         <i class="fab fa-hornbill">
                         </i>
-                        <h4>
-                            Fraternity
+                        <h4 class="lang" key="description6">
+                            Fraternidad
                         </h4>
                     </h1>
                 </div>
@@ -207,8 +218,8 @@
                     <h1>
                         <i class="fas fa-comments">
                         </i>
-                        <h4>
-                            Connection
+                        <h4 class="lang" key="description7">
+                            Conectar
                         </h4>
                     </h1>
                 </div>
@@ -216,8 +227,8 @@
                     <h1>
                         <i class="fas fa-paper-plane">
                         </i>
-                        <h4>
-                            Evolution
+                        <h4 class="lang" key="description8">
+                            Evolución
                         </h4>
                     </h1>
                 </div>
@@ -225,8 +236,8 @@
                     <h1>
                         <i class="fas fa-rocket">
                         </i>
-                        <h4>
-                            Competitiveness
+                        <h4 class="lang" key="description9">
+                            Competitividad
                         </h4>
                     </h1>
                 </div>
@@ -234,8 +245,8 @@
                     <h1>
                         <i class="fas fa-hand-holding-usd">
                         </i>
-                        <h4>
-                            Money
+                        <h4 class="lang" key="description10">
+                            Dinero
                         </h4>
                     </h1>
                 </div>
@@ -244,7 +255,7 @@
     </section>
     <section id="nfts">
         <div class="container">
-            <h2>NFTs</h2>
+            <h2>NFT</h2>
             <label class="slick-label prevSlick" for="prevBtnFicha"><i class="fas fa-arrow-left"></i></label>
             <label class="slick-label nextSlick" for="nextBtnFicha"><i class="fas fa-arrow-right"></i></label>
             <!-- inicio del slider -->
@@ -255,16 +266,16 @@
                         <div class="fma-card__image">
                             <img src="./img/nft/rocafondo.png"/>
                         </div>
-                        <div class="fma-card__level">
-                            Rarity: <span>stone</span>
+                        <div class="fma-card__level lang" key="nftClass">
+                            Clase: <span>1</span>
                         </div>
-                        <div class="fma-card__unit-name">
-                            Domino of stone
+                        <div class="fma-card__unit-name lang" key="nft2">
+                            Domino de roca
                         </div>
-                        <div class="fma-card__unit-description">
-                            Created with primitive tools, it has been the entertainment and the salvation of many in situations where the mind would be their only way out.
-                            <div>
-                                -In honor of the miners trapped in Chile in 2010
+                        <div class="fma-card__unit-description lang" key="nft3">
+                            Creado con herramientas primitivas, ha sido el entretenimiento y la salvación de muchos en situaciones donde la mente sería su única salida.
+                            <div class="lang" key="nft4">
+                                -En honor a los mineros atrapados en Chile en 2010
                             </div>
                         </div>
                     </div>
@@ -277,17 +288,14 @@
                         <div class="fma-card__image">
                             <img src="./img/nft/maderafondo.png"/>
                         </div>
-                        <div class="fma-card__level">
-                            Rarity: <span>wood</span>
+                        <div class="fma-card__level lang" key="nftClass">
+                            Clase: <span>2</span>
                         </div>
-                        <div class="fma-card__unit-name">
-                            Domino of wood
+                        <div class="fma-card__unit-name lang" key="nft6">
+                            Domino de madera
                         </div>
-                        <div class="fma-card__unit-description">
-                            —Free time is always good if it is well spent - the scholars of magic say, that is why to train their brain while enjoying with their friends, they have built dominoes with the arcane wood of the forest they have inhabited for centuries.
-                            <div>
-                                -In honor of the fires that occurred in Amazonas and Australia between 2019-2020
-                            </div>
+                        <div class="fma-card__unit-description lang" key="nft7">
+                            Los mejores ebanistas del mundo se han unido y han elegido las mejores piezas de madera para crear estas hermosas fichas de domino.
                         </div>
                     </div>
                     <!-- end fma-card mira-armstrong-->
@@ -299,17 +307,14 @@
                         <div class="fma-card__image">
                             <img src="./img/nft/broncefondo.png"/>
                         </div>
-                        <div class="fma-card__level">
-                            Rarity: <span>bronze</span>
+                        <div class="fma-card__level lang" key="nftClass">
+                            Clase: <span>3</span>
                         </div>
-                        <div class="fma-card__unit-name">
-                            Domino of bronze
+                        <div class="fma-card__unit-name lang" key="nft9">
+                            Domino de bronce
                         </div>
-                        <div class="fma-card__unit-description">
-                            The bronze domino reminds us of that wonderful and impressive curiosity of the human being, who discovered bronze through experimentation by heating tin in a copper pot, which fused with tin and became bronze.
-                            <div>
-                                -In honor of the inventors of all history
-                            </div>
+                        <div class="fma-card__unit-description lang" key="nft10">
+                            Las curiosidades y las casualidades muchas veces se juntan para crear cosas extraordinarias, así es como nace el bronce, material que se creó por primera vez fundiendo estaño en una olla de cobre, para luego darle vida a estas piezas unicas de domino.
                         </div>
                     </div>
                     <!-- end fma-card mira-armstrong-->
@@ -321,14 +326,14 @@
                         <div class="fma-card__image">
                             <img src="./img/nft/platafondo.png"/>
                         </div>
-                        <div class="fma-card__level">
-                            Rarity: <span>silver</span>
+                        <div class="fma-card__level lang" key="nftClass">
+                            Clase: <span>4</span>
                         </div>
-                        <div class="fma-card__unit-name">
-                            Domino of silver
+                        <div class="fma-card__unit-name lang" key="nft12">
+                            Domino de plata
                         </div>
-                        <div class="fma-card__unit-description">
-                            Dwarf blacksmiths have always liked to drink good beer after a hard day's work, and what better way than playing dominoes with colleagues and the best liquor in hand, that's why they have built this beautiful silver domino.
+                        <div class="fma-card__unit-description lang" key="nft13">
+                            A los herreros enanos siempre les ha gustado tomar una buena cerveza después de un duro día de trabajo, pero un buen licor no esta completo sin una forma de entretenimiento, por eso los de mejor habilidad han fundido plata y la han vertido en moldes para crear estos preciosos dominós.
                         </div>
                     </div>
                     <!-- end fma-card mira-armstrong-->
@@ -340,14 +345,14 @@
                         <div class="fma-card__image">
                             <img src="./img/nft/orofondo.png"/>
                         </div>
-                        <div class="fma-card__level">
-                            Rarity: <span>gold</span>
+                        <div class="fma-card__level lang" key="nftClass">
+                            Clase: <span>5</span>
                         </div>
-                        <div class="fma-card__unit-name">
-                            Domino of gold
+                        <div class="fma-card__unit-name lang" key="nft15">
+                            Domino de oro
                         </div>
-                        <div class="fma-card__unit-description">
-                            Money and power are two sides of a coin, it shows power in the best way. Use pieces of dominoes cast in pure gold and treated to be able to play among great friends where you show your intellectual and economic superiority.
+                        <div class="fma-card__unit-description lang" key="nft16">
+                           El dinero y el poder son dos caras de una moneda, muestra el poder de la mejor manera.
                         </div>
                     </div>
                     <!-- end fma-card mira-armstrong-->
@@ -359,14 +364,14 @@
                         <div class="fma-card__image">
                             <img src="./img/nft/diamantefondo.png"/>
                         </div>
-                        <div class="fma-card__level">
-                            Rarity: <span>diamond</span>
+                        <div class="fma-card__level lang" key="nftClass">
+                            Clase: <span>6</span>
                         </div>
-                        <div class="fma-card__unit-name">
-                            Domino of diamond
+                        <div class="fma-card__unit-name lang" key="nft18">
+                            Domino de diamante
                         </div>
-                        <div class="fma-card__unit-description">
-                            Only the elite are capable of having what they please, that includes owning dominoes of the flawless purple diamond, one of the rarest and most coveted variants in existence. Convey elegance, power and dominance when wearing these Argyle Mined Diamond dominoes.
+                        <div class="fma-card__unit-description lang" key="nft19">
+                            Solo la élite es capaz de tener lo que le plazca, eso incluye poseer fichas de dominó del impecable diamante púrpura, una de las variantes más raras y codiciadas que existen. Transmita elegancia, poder y dominio al usar estas fichas de dominó de diamante extraído de las minas de Argyle.
                         </div>
                     </div>
                     <!-- end fma-card mira-armstrong-->
@@ -379,37 +384,37 @@
     </section>
     <section id="roadmap">
         <div class="container">
-            <h3>
-                Roadmap
+            <h3 class="lang" key="road1">
+                Mapa de Ruta
             </h3>
             <article class="no-before">
                 <h4 class="txt-right">
                     Q4 2021
                 </h4>
                 <div class="roadmapBox right">
-                    <div class="stage-way marked">
-                        Idea development
+                    <div class="stage-way marked lang" key="road2">
+                        Desarrollo de la idea
                     </div>
-                    <div class="stage-way marked">
-                        Creation of the name
+                    <div class="stage-way marked lang" key="road3">
+                        Creacion del nombre
                     </div>
-                    <div class="stage-way marked">
-                        Organization of the team
+                    <div class="stage-way marked lang" key="road4">
+                        Organizacion del equipo
                     </div>
-                    <div class="stage-way marked">
-                        Development of the economy
+                    <div class="stage-way marked lang" key="road5">
+                        Desarrollo de la economia
                     </div>
-                    <div class="stage-way marked">
-                        Whitepaper development
+                    <div class="stage-way marked lang" key="road6">
+                        Desarrollo del whitepaper
                     </div>
-                    <div class="stage-way marked">
-                        Web development
+                    <div class="stage-way marked lang" key="road7">
+                        Desarrollo de la web
                     </div>
-                    <div class="stage-way marked">
-                        Development of social networks
+                    <div class="stage-way marked lang" key="road8">
+                        Creacion de las redes sociales
                     </div>
-                    <div class="stage-way marked">
-                        Development of the long-term economic plan
+                    <div class="stage-way marked lang" key="road9">
+                        Creacion del plan economico a largo plazo
                     </div>
                 </div>
                 <!-- domino-->
@@ -454,23 +459,14 @@
                     Q1 2022
                 </h4>
                 <div class="roadmapBox txt-right">
-                    <div class="stage-way marked">
-                        Launch of the web
+                    <div class="stage-way marked lang" key="road10">
+                        Lanzamiento oficial de la web
                     </div>
-                    <div class="stage-way marked">
-                        Design of assets
+                    <div class="stage-way marked lang" key="road11">
+                        Diseño de las ilustraciones
                     </div>
-                    <div class="stage-way">
-                        Begin of investment phase 1
-                    </div>
-                    <div class="stage-way">
-                        Development of contracts
-                    </div>
-                    <div class="stage-way">
-                        Launch of contracts
-                    </div>
-                    <div class="stage-way">
-                        Launch of the complete website
+                    <div class="stage-way marked lang" key="road12">
+                        Comienzo de la fase semilla
                     </div>
                     
                 </div>
@@ -516,37 +512,24 @@
                     Q2 2022
                 </h4>
                 <div class="roadmapBox right">
-                    <div class="stage-way">
-                        Sale of nft domino sets
+                    <div class="stage-way marked lang" key="road13">
+                        Prueba de la version alfa
                     </div>
-                    <div class="stage-way">
-                        Game client development
+                    <div class="stage-way lang" key="road14">
+                        Primer torneo abierto (Beta)
                     </div>
-                    <div class="stage-way">
-                        Game server development
+                    <div class="stage-way lang" key="road15">
+                        Primer torneo abierto de pago
                     </div>
-                    <div class="stage-way">
-                        Game alpha test
+                    <div class="stage-way lang" key="road16">
+                        Desarrollo de los contratos
                     </div>
-                    <div class="stage-way">
-                        Opening to alpha to early investors
+                    <div class="stage-way lang" key="road17">
+                        Lanzamiento de los contratos
                     </div>
-                    <div class="stage-way">
-                        Sale of domino nft tables
+                    <div class="stage-way lang" key="road18">
+                        Venta de fichas de domino
                     </div>
-                    <div class="stage-way">
-                        Pre-sale of the DMI token
-                    </div>
-                    <div class="stage-way">
-                        Added liquidity to the DRW token
-                    </div>
-                    <div class="stage-way">
-                        Game beta test
-                    </div>
-                    <div class="stage-way">
-                        Opening to the beta to the players with domino set
-                    </div>
-                    
                 </div>
                 <!-- domino-->
                 <div class="domino sm shadow">
@@ -590,29 +573,20 @@
                     Q3 2022
                 </h4>
                 <div class="roadmapBox txt-right">
-                    <div class="stage-way">
-                        Launch Play to Earn
+                    <div class="stage-way lang" key="road19">
+                        Apertura del mercado
                     </div>
-                    <div class="stage-way">
-                        Opening of the market
+                    <div class="stage-way lang" key="road20">
+                        Lanzamiento de la version beta para Android
                     </div>
-                    <div class="stage-way">
-                        Opening of the breed
+                    <div class="stage-way lang" key="road21">
+                        Lanzamiento de la version beta para IOS
                     </div>
-                    <div class="stage-way">
-                        First season tournament
+                    <div class="stage-way lang" key="road22">
+                        Lanzamiento de aspectos para dominos y avatars
                     </div>
-                    <div class="stage-way">
-                        Launch of the game for Android
-                    </div>
-                    <div class="stage-way">
-                        Launch of the game for IOS
-                    </div>
-                    <div class="stage-way">
-                        Launch of skins and avatars
-                    </div>
-                    <div class="stage-way">
-                        Added emojis and minichat
+                    <div class="stage-way lang" key="road23">
+                        Emojies y minichat agregado al juego
                     </div>
                 </div>
                 <!-- domino-->
@@ -652,28 +626,14 @@
                 </div>
                 <!-- end domino-->
             </article>
+            <!--
             <article>
                 <h4 class="txt-right">
                     Q4 2022
                 </h4>
                 <div class="roadmapBox right">
-                    <div class="stage-way">
-                        Launch of the betting system
-                    </div>
-                    <div class="stage-way">
-                        Games between friends
-                    </div>
-                    <div class="stage-way">
-                        Beta of the Watch battle
-                    </div>
-                    <div class="stage-way">
-                        Beta 3D version of the game
-                    </div>
-                    <div class="stage-way">
-                        First tournament broadcast
-                    </div>
                 </div>
-                <!-- domino-->
+                <-- domino->
                 <div class="domino sm shadow">
                     <div class="top-half">
                         <div class="dot-container three">
@@ -708,8 +668,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- end domino-->
+                <-- end domino->
             </article>
+            
             <article class="no-after">
                 <h4 class="right">
                     Q1 2023
@@ -719,140 +680,67 @@
                         Begin of the metaverso
                     </div>
                 </div>
-            </article>
-        </div>
-    </section>
-    <section id="tokenomic">
-        <div class="container">
-            <h3>
-                Tokenomic of $DMI token
-            </h3>
-            <h5>
-                12.000.000 total supply
-            </h5>
-            <div class="labels-box">
-                <div class="label">
-                    <i class="fas fa-square color3">
-                    </i>
-                    Liquidity reserve 78%: Unlock about 4 years
-                </div>
-                <div class="label">
-                    <i class="fas fa-square color4">
-                    </i>
-                    Public Sale 1%: Unlocked
-                </div>
-                <div class="label">
-                    <i class="fas fa-square color5">
-                    </i>
-                    Events 6%: Unlock about 10 years
-                </div>
-                <!--<div class="label">
-                    <i class="fas fa-square color6">
-                    </i>
-                    Pre-sale: Lock 1 month, Unlock about 1 years
-                </div>-->
-                <div class="label">
-                    <i class="fas fa-square color6">
-                    </i>
-                    Ecosystem 15%: Unlock about 2 years
-                </div>
-            </div>
-            <div style="clear: both;">
-            </div>
-            <div class="grafico">
-                <canvas height="500" id="myChart" width="400">
-                </canvas>
-            </div>
+            </article>-->
         </div>
     </section>
     <section id="roadmap-investment">
         <div class="container">
-            <h3>
-                Roadmap investment
+            <h3 class="lang" key="invest1">
+                Ruta de inversion
             </h3>
             <div class="invest-boxes">
                 <article class="rm-invest-box">
-                    <h4>
-                        Phase 1 - seed investors
+                    <h4 class="lang" key="invest2">
+                        Fase 1 - Inversores semillas
                         <br>
                             <i class="fas fa-seedling">
                             </i>
                         </br>
                     </h4>
-                    <p class="description">
-                        Investors who enter this phase will be able to obtain a profit of 10% of the commissions obtained in the market and 10% obtained from the $ DMI tokens obtained from the improvement of categories and cloning. Investors in this phase will also enjoy exclusive content of all the progress of the project, as well as being part of the test team of our demos. This investment round will be available for a limited time.
+                    <p class="description lang" key="invest3">
+                        Los inversores que entren en esta fase podrán obtener una ganancia del 15% de las ganancias totales obtenidas por cualquier medio de ingreso, exceptuando los torneos. Los inversores de esta fase también disfrutarán de contenidos exclusivos de todos los avances del proyecto, además de formar parte del equipo de pruebas de nuestras demos. Esta ronda de inversión estará disponible por tiempo limitado.
                     </p>
-                    <h6>
-                        The funds obtained in this phase will be used to:
+                    <h6 class="lang" key="invest4">
+                        Los fondos obtenidos en esta fase seran usados para:
                     </h6>
-                    <div>
-                        Project development
+                    <div class="lang" key="invest5">
+                        Desarrollo del proyecto
                     </div>
-                    <div class="">
-                        Resources
+                    <div class="lang" key="invest6">
+                        Recursos
                     </div>
-                    <div class="">
+                    <div class="lang" key="invest7">
                         Marketing
                     </div>
-                    <div class="">
-                        Development template expansion
+                    <div class="lang" key="invest8">
+                        Expansion del personal
                     </div>
                     <input type="button" id="btn-contact-us" style="display: none;">
                     <div class="container-btn">
-                        <a href="mailto:nft.domino@gmail.com"><label for="btn-contact-us-investor" class="btn" onclick="clickBtn(this);"><i class="fas fa-envelope"></i> Contact us </label></a></div>
+                        <a href="mailto:nft.domino@gmail.com"><label for="btn-contact-us-investor" class="btn lang" onclick="clickBtn(this);" key="contact"><i class="fas fa-envelope"></i> Contactanos </label></a></div>
                 </article>
                 <article class="rm-invest-box">
-                    <h4>
-                        Phase 2 - Domino pieces set sale
+                    <h4 class="lang" key="invest9">
+                        Fase 2 - Venta de fichas de domino
                         <br>
                             <i class="fas fa-dice-six">
                             </i>
                         </br>
                     </h4>
-                    <p class="description">
-                        In this phase, the first sets of domino pieces will be sold, investors will be able to choose between the different rarities of sets that exist in the game, taking into account that the higher the investment you will get a better set of pieces and a higher profit.
+                    <p class="description" class="lang" key="invest10">
+                        En esta fase se venderán las primeras fichas de domino, las cuales seran unicas en su totalidad, donde cada una de las piezas vendidas sera diferente a las demas en su aspecto.
                     </p>
-                    <h6>
-                        The funds obtained in this phase will be used to:
+                    <h6 class="lang" key="invest11">
+                        Los fondos obtenidos en esta fase se usaran para:
                     </h6>
-                    <div class="">
-                        Project development
+                    <div class="lang" key="invest12">
+                        Desarrollo del proyecto
                     </div>
-                    <div class="">
-                        Resources
+                    <div class="lang" key="invest13">
+                        Recursos
                     </div>
-                    <div class="">
+                    <div class="lang" key="invest14">
                         Marketing
-                    </div>
-                    <div class="">
-                        $DRW liquidity pool
-                    </div>
-                </article>
-                <article class="rm-invest-box">
-                    <h4>
-                        Phase 3 - sale of tables
-                        <br>
-                            <i class="fas fa-dice-d6">
-                            </i>
-                        </br>
-                    </h4>
-                    <p class="description">
-                        In this phase, investors will be able to buy tables of the game, where they will obtain a profit from the players for using their tables.
-                        <br>
-                            This investment phase will have a time limit, the tables that have not been sold at the end of the round will be taken by the team for the benefit of the project.
-                        </br>
-                    </p>
-                    <h6>
-                        The funds obtained in this phase will be used to:
-                    </h6>
-                    <div class="">
-                        Resources
-                    </div>
-                    <div class="">
-                        $DRW liquidity pool
-                    </div>
-                    <div class="">
-                        $DMI liquidity pool
                     </div>
                 </article>
             </div>
@@ -860,8 +748,8 @@
     </section>
     <section id="team">
         <div class="slider-container">
-            <h2 class="title">
-                Team of DomiNFT
+            <h2 class="title lang" key="team1">
+                Equipo de Domi NFT
             </h2>
             <input id="one" name="dot" type="radio"/>
             <input id="two" name="dot" type="radio"/>
@@ -878,29 +766,29 @@
                                 <div class="name">
                                     Akkalame Ereut
                                 </div>
-                                <div class="job">
-                                    CEO
+                                <div class="job lang" key="team2">
+                                    CEO, Programador, Diseñador web
                                 </div>
                             </div>
                             
-                            <!--<div class="media-icons">
-                                <a href="#" target="_blank">
+                            <div class="media-icons">
+                                <!--<a href="#" target="_blank">
                                     <i class="fab fa-facebook-f">
                                     </i>
-                                <a>
-                                <a href="#" target="_blank">
+                                <a>-->
+                                <a href="https://twitter.com/akkalame" target="_blank">
                                     <i class="fab fa-twitter">
                                     </i>
                                 </a>
-                                <a href="https://www.instagram.com/akkalame/" target="_blank">
+                                <!--<a href="https://www.instagram.com/akkalame/" target="_blank">
                                     <i class="fab fa-instagram">
                                     </i>
                                 </a>
                                 <a href="#" target="_blank">
                                     <i class="fab fa-youtube">
                                     </i>
-                                </a>
-                            </div>-->
+                                </a>-->
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -913,8 +801,8 @@
                                 <div class="name">
                                     Alfredo Colmenarez
                                 </div>
-                                <div class="job">
-                                    MARKETING
+                                <div class="job lang" key="team3">
+                                    Departamento creativo
                                 </div>
                             </div>
                             <!--<div class="media-icons">
@@ -935,8 +823,8 @@
                                 <div class="name">
                                     Franklin Pacheco
                                 </div>
-                                <div class="job">
-                                    SOCIAL NETWORKS
+                                <div class="job lang" key="team4">
+                                    administrador de redes sociales
                                 </div>
                             </div>
                             <!--<div class="media-icons">
@@ -980,8 +868,8 @@
                                 <div class="name">
                                     Caleb Ruiz
                                 </div>
-                                <div class="job">
-                                    IT INFRAESTRUCTURE
+                                <div class="job lang" key="team5">
+                                    Administrador de infraestructura
                                 </div>
                             </div>
                         </div>
@@ -996,8 +884,8 @@
                                 <div class="name">
                                     Carlos López
                                 </div>
-                                <div class="job">
-                                    GRAPHIC DESIGNER
+                                <div class="job lang" key="team6">
+                                    Diseñador grafico
                                 </div>
                             </div>
                         </div>
@@ -1023,11 +911,11 @@
             <div id="caption-footer"><span>© 2022 Domi NFT</span></div>
         </article>
         <article>
-            <div class="title-footer"><h4>About Domi NFT</h4></div>
+            <div class="title-footer"><h4 class="lang" key="foot1">Sobre Domi NFT</h4></div>
             <ul>
-                <li id="contact-us"><a href="mailto:nft.domino@gmail.com" onclick="copyToClipboard('txtMail');copied('contact-us')">Contact us</a>
+                <li id="contact-us"><a href="mailto:nft.domino@gmail.com" onclick="copyToClipboard('txtMail');popup_e('contact-us')" class="lang" key="contact">Contactanos</a>
                     <p style="display:none;" id="txtMail">nft.domino@gmail.com</p>
-                    <label class="oculto">Mail copied to clipboard</label>
+                    <label class="oculto lang" key="contact2">Correo copiado al portapapeles</label>
                 </li>
                 <li><a href="https://domino-nft.gitbook.io/whitepaper-domi/" target="_blank">Whitepaper</a></li>
             </ul>

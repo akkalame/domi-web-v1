@@ -1,0 +1,32 @@
+#mainheader {
+    padding: 0;
+}
+#navbar {
+    padding: 0;
+}
+#torneos {
+    position: relative;
+    height: 900px;
+    background: url('../img/torneo-fondo3.png') no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#title-container img {
+    max-width: 150px;
+}
+#title-container h1 {
+    font-size: 1rem;
+    padding: 0;
+}
+#title-container {
+    margin: 0;
+    float: left;
+    padding: 0;
+}
+#torneos .container-btn {
+    padding: 30px;
+    bottom: 70px;
+    right: 230px;
+    position: absolute;
+    text-align: center;
+}

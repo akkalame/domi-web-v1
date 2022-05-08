@@ -4,18 +4,75 @@ $(document).ready( function(){
 
   responsiveDomino();
 
-  addCheckRoadmap();
-
   ocultarTopScroll();
   sliderFichas();
 
+  traducir();
 
-
-  
+  addCheckRoadmap();
 });
 
+function traducir(){
+  
+  $.getJSON('ajax/lang.json', function(json){
+    //Lenguaje por defecto de la página sessionStorage.setItem("lang", "idioma")"
+    if(!localStorage.getItem("lang")){
+      localStorage.setItem("lang", "es");
+    }
+    let lang = localStorage.getItem("lang");
+    let doc = json;
+    cambiarLangElementos(lang, doc);
+
+    $('.translate').click(function(){
+      localStorage.setItem("lang", $(this).attr('id')) ;
+      let lang = $(this).attr('id');
+      let doc = json;
+        cambiarLangElementos(lang, doc);
+        setMarkedLang();
+        //Each
+    }); //Funcion click
+
+    setMarkedLang();
+    addCheckRoadmap()
+  });//Get json AJAX
+}
+
+function cambiarLangElementos(lang, doc){
+  let numClase = 0;
+  $('.lang').each(function(index, element){
+    $(this).text(doc[lang][$(this).attr('key')]);
+    if($(this).attr('key') == 'description1'){
+      $(this).append('<span>Domi</span>?');
+    }
+    if($(this).attr('key') == 'nftClass'){
+      $(this).append(numClase);
+      numClase++;
+    }
+  }); 
+}
+function setMarkedLang(){
+  let lang = localStorage.getItem("lang");
+  $('label').each(function(){
+
+    let clases = $(this).attr('class');
+    let split_clases = clases.split(' ');
+    let forAttr = $(this).attr('for');
+    let e = $(this);
+    //alert(split_clases.indexOf('langFor'));
+    split_clases.forEach(function(item, index){
+      if(item == 'langFor'){
+        if(forAttr == lang){
+          e.addClass('marked')
+        }else{
+          e.removeClass('marked')
+        }
+      }
+
+    });
+  });
+}
 function sliderFichas(){
-  var slideContainer = $('.slide-fichas-container');
+  let slideContainer = $('.slide-fichas-container');
   
   slideContainer.slick();
   
@@ -95,8 +152,8 @@ function menuMovil(){
 }
 
 function addCheckRoadmap(){
-  $('.roadmapBox.right .stage-way.marked').append(' <i class="fas fa-check"></i>')
-  $('.roadmapBox.txt-right .stage-way.marked').prepend(' <i class="fas fa-check"></i> ')
+  $('.roadmapBox.right .stage-way.marked').append(' <i class="fas fa-check"></i>');
+  $('.roadmapBox.txt-right .stage-way.marked').prepend(' <i class="fas fa-check"></i> ');
 
 }
 
@@ -139,7 +196,7 @@ function copyToClipboard(id_elemento){
 
 }
 
-function copied(id_elemento){
+function popup_e(id_elemento){
   let e = $('#'+id_elemento+' label');
   e.removeClass('oculto')
   setTimeout(function(){
