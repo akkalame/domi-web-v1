@@ -166,6 +166,7 @@ a.disabled {
 }
 .btn-open, .btn-close {
     visibility: hidden;
+    z-index: 1;
 }
 /* navbar  */
 
@@ -218,7 +219,7 @@ a.disabled {
     padding: 40px 0;
 }
 #title-container {
-    max-width: 800px;
+    max-width: 940px;
     margin: auto;
     padding-bottom: 50px;
 }
@@ -316,7 +317,7 @@ Design of the sliders
 
 .slide-fichas-container {
     margin: auto;
-    width: 600px;
+    max-width: 600px;
     text-align: center;
 }
 .wrapper {
@@ -332,7 +333,7 @@ Design of the card
 
 .fma-card {
     background: white;
-    width: 320px;
+    max-width: 320px;
     display: inline-block;
     margin: auto;
     border-radius: 12px;
@@ -585,14 +586,16 @@ Design of the colors of the card
 
 #mainfooter {
     padding: 50px 50px;
-    background: var(--color6);
+    background: var(--color1);
     color: white;
     font-size: 1.3rem;
-    height: 180px;
+    max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #mainfooter a {
     color: white;
-    transition: color .5s ease-out;
+    transition: color .3s;
 }
 #mainfooter a:hover {
     color: var(--color1);
@@ -613,12 +616,14 @@ Design of the colors of the card
     text-decoration: none;
 }
 #mainfooter article {
-    height: 100%;
-    float: left;
+    padding: 20px 0px;
     text-align: left;
 }
+#mainfooter.one article {
+    width: 100%;
+}
 #mainfooter.two article {
-    width: 50%;
+    width: calc(100% / 2);
 }
 #mainfooter.three article {
     width: calc(100% / 3);
@@ -630,6 +635,7 @@ Design of the colors of the card
     border-radius: 5px;
     margin-left: 10px;
     transition: opacity 2s;
+    position: absolute;
 }
 /* topscroll  */
 

@@ -40,6 +40,9 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease;
 }
+.main-card .cards.one .card {
+    width: 100%;
+}
 .main-card .cards.two .card {
     width: calc(100% / 2 - 10px);
 }
@@ -148,6 +151,16 @@ input[type="radio"] {
     display: none;
 }
 @media (max-width: 768px) {
+    .slider-container {
+        padding: 30px 0px;
+    }
+    .slider-container .main-card {
+        display: block;
+    }
+    .slider-container .main-card .cards {
+        margin: 0px 0px;
+        margin-left: 5px;
+    }
     .main-card .cards .card {
         margin: 20px 0 10px 0;
         width: calc(100% / 2 - 10px);

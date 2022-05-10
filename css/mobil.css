@@ -84,7 +84,12 @@
 }
 @media (max-width: 768px) {
     .container {
-        padding: 0 10px;
+        padding: 0px 10px;
+    }
+    /* utils */
+    .btn {
+        padding: 15px;
+        font-size: 1.25rem;
     }
     /*nav bar*/
     #navbar {
@@ -132,9 +137,18 @@
     /*mainheader*/
     #mainheader {
         height: 500px;
+        position: relative;
+    }
+    #showcase {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
     }
     #title-container {
-        max-width: 360px;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     #showcase img {
         float: none;
@@ -259,10 +273,25 @@
         width: 0px;
         height: 0px;
     }
-    /*team*/
     /* domino sm  */
     #roadmap .domino.sm {
         visibility: hidden;
+    }
+    /* footer */
+    #mainfooter {
+        max-height: 240px;
+        font-size: 1rem;
+    }
+    #mainfooter .title-footer h4 {
+        font-size: 1.25rem;
+    }
+    #mainfooter ul li {
+        padding: 2px 0px;
+        font-size: 1.1rem;
+    }
+    #social-footer a {
+        font-size: 1.5rem;
+        padding: 0px .2rem;
     }
 }
 @media (max-width: 640px) {
@@ -283,10 +312,6 @@
         font-size: 1rem;
     }
     /* showcase */
-    #showcase {
-        position: absolute;
-        top: 10%;
-    }
     #showcase h1 {
         margin-bottom: 0px;
     }
@@ -299,10 +324,17 @@
         width: 110px !important;
     }
     .card .content .name {
-        font-size: 15px !important;
+        font-size: 18px !important;
     }
     .card .content .job {
-        font-size: 13px !important;
+        font-size: 12px !important;
+    }
+    /* nft */
+    #nfts .prevSlick {
+        left: calc(50% - 200px);
+    }
+    #nfts .nextSlick {
+        right: calc(50% - 200px);
     }
 }
 @media (max-width: 380px) {
@@ -333,17 +365,28 @@
     }
     /*team*/
     .cards .card .content .img {
-        height: 80px !important;
-        width: 80px !important;
+        height: 100px !important;
+        width: 100px !important;
     }
     .card .content .img img {
         border: 1px solid var(--color1) !important;
     }
-    .card .content .name {
-        font-size: 12px !important;
+    /* footer */
+    #mainfooter {
+        max-height: 320px;
     }
-    .card .content .job {
-        font-size: 10px !important;
+    /* nft */
+    .fma-card {
+        max-width: 280px;
+    }
+    .fma-card__image img {
+        right: 75px;
+    }
+    #nfts .prevSlick {
+        left: calc(50% - 140px);
+    }
+    #nfts .nextSlick {
+        right: calc(50% - 140px);
     }
 }
 @media (max-width: 240px) {

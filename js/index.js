@@ -3,7 +3,8 @@ $(document).ready( function(){
   menuMovil();
 
   responsiveDomino();
-
+  responsiveTeam();
+  responsiveFooter();
   ocultarTopScroll();
   sliderFichas();
 
@@ -29,11 +30,12 @@ function traducir(){
       let doc = json;
         cambiarLangElementos(lang, doc);
         setMarkedLang();
+        addCheckRoadmap();
         //Each
     }); //Funcion click
 
     setMarkedLang();
-    addCheckRoadmap()
+    addCheckRoadmap();
   });//Get json AJAX
 }
 
@@ -41,12 +43,16 @@ function cambiarLangElementos(lang, doc){
   let numClase = 0;
   $('.lang').each(function(index, element){
     $(this).text(doc[lang][$(this).attr('key')]);
+    
     if($(this).attr('key') == 'description1'){
       $(this).append('<span>Domi</span>?');
     }
     if($(this).attr('key') == 'nftClass'){
       $(this).append(numClase);
       numClase++;
+    }
+    if($(this).attr('key') == 'contact'){
+      $(this).prepend('<i class="fas fa-envelope"></i> ');
     }
   }); 
 }
@@ -69,7 +75,19 @@ function setMarkedLang(){
       }
 
     });
+  }); // fin cambiar label lang
+
+  let linkWp = $('.link_wp');
+  linkWp.each(function(){
+    if(lang == "es"){
+      $(this).attr('href', 'https://dominft.gitbook.io/whitepaper-domi-nft-v2/');
+    }else if(lang == "en"){
+      $(this).attr('href', 'https://dominft.gitbook.io/whitepaper-domi-nft-v2/v/en-whitepaper-domi-nft/');
+    }else if(lang == "br"){
+      $(this).attr('href', 'https://dominft.gitbook.io/whitepaper-domi-nft-v2/v/br-whitepaper-domi-nft/');
+    }
   });
+
 }
 function sliderFichas(){
   let slideContainer = $('.slide-fichas-container');
@@ -128,6 +146,72 @@ function responsiveDomino(){
 
   });
   
+}
+
+//ajusta el tamaño de las cartas del equipo dependiendo de las pantallas
+function responsiveTeam(){
+  let e = $('#team .main-card .cards');
+  let eButton = $('#team .button');
+  if ( $(window).width() <= 768 ) {
+    e.removeClass('three')
+    e.addClass('one');
+
+    eButton.addClass('oculto');
+  }else{
+    e.removeClass('one')
+    e.addClass('three');
+
+    eButton.removeClass('oculto');
+  }
+
+  $(window).resize(function(event) {
+    let e = $('#team .main-card .cards');
+    if ( $(window).width() <= 768 ) {
+      e.removeClass('three')
+      e.addClass('one');
+      eButton.addClass('oculto');
+    }else{
+      e.removeClass('one')
+      e.addClass('three');
+      eButton.removeClass('oculto');
+    }
+
+  });
+}
+
+function responsiveFooter(){
+  let eFooter = $('#mainfooter');
+  if($(window).width() > 768){
+    eFooter.removeClass('two');
+    eFooter.removeClass('one');
+    eFooter.addClass('three');
+  }else if ( $(window).width() <= 768 & $(window).width() > 320) {
+    eFooter.removeClass('three');
+    eFooter.removeClass('one');
+    eFooter.addClass('two');
+  }else if($(window).width() <= 320){
+    eFooter.removeClass('three');
+    eFooter.removeClass('two');
+    eFooter.addClass('one');
+  }
+
+  $(window).resize(function(event) {
+    let eFooter = $('#mainfooter');
+    if($(window).width() > 768){
+      eFooter.removeClass('two');
+      eFooter.removeClass('one');
+      eFooter.addClass('three');
+    }else if ( $(window).width() <= 768 & $(window).width() > 320) {
+      eFooter.removeClass('three');
+      eFooter.removeClass('one');
+      eFooter.addClass('two');
+    }else if($(window).width() <= 320){
+      eFooter.removeClass('three');
+      eFooter.removeClass('two');
+      eFooter.addClass('one');
+    }
+
+  });
 }
 
 
