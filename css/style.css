@@ -598,7 +598,7 @@ Design of the colors of the card
     transition: color .3s;
 }
 #mainfooter a:hover {
-    color: var(--color1);
+    color: var(--color4);
     text-decoration: underline;
 }
 #mainfooter ul li {
